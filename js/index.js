@@ -3,7 +3,7 @@ const rootURL = 'https://api.github.com';
 function getRepositories() {
   const name = document.getElementById('username').value;
   const xhr = new XMLHttpRequest();
-  xhr.addEventListener('load', showRepositories);
+  xhr.addEventListener('load', displayRepositories);
   xhr.open('GET', `https://api.github.com/users/${username}/repos`);
   xhr.send();
 }
